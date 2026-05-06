@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área Restrita</title>
+</head>
+<body>
+
+    {% if cadeado == 'fechado' %}
+        <h1>🔒 Cadeado Fechado</h1>
+
+    {% elif cadeado == 'aberto' %}
+        <h1>🔓 Cadeado Aberto</h1>
+
+    {% else %}
+        <h1>ID inválido</h1>
+
+    {% endif %}
+
+</body>
+</html>
