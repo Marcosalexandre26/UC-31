@@ -1,0 +1,36 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename = 'style.css')}}">
+    <title>
+        {% block titulo %}
+        Meu sistema
+        {% endblock %}
+    </title>
+
+</head>
+<body>
+    
+    <header>
+        <div class="navbar">
+
+            <div class="logo">
+                TechFuture
+            </div>
+            
+            <div class="menu">
+                <a href="/">Início</a>
+                <a href="/cursos">Cursos</a>
+                <a href="/professores">Professores</a>
+                <a href="/contato">Contato</a>
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+        {% block conteudo %}
+        {% endblock %}
+    </main>
