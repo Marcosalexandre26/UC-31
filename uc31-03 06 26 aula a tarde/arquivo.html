@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cadastro de Alunos</title>
+
+    <style>
+        body{
+            font-family: Arial;
+            background-color: lightblue;
+        }
+
+        .formulario{
+            width: 400px;
+            background-color: white;
+            margin: auto;
+            margin-top: 30px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        input, select{
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+
+        button{
+            width: 100%;
+            padding: 10px;
+            background-color: green;
+            color: white;
+            border: none;
+        }
+    </style>
+
+</head>
+<body>
+
+<div class="formulario">
+
+    <h2>Cadastro de Alunos</h2>
+
+    <form action="/cadastro" method="POST">
+
+        <input type="text" name="nome" placeholder="Nome Completo">
+
+        <input type="text" name="email" placeholder="E-mail">
+
+        <input type="text" name="telefone" placeholder="Telefone">
+
+        <input type="text" name="cpf" placeholder="CPF">
+
+        <input type="text" name="cidade" placeholder="Cidade">
+
+        <input type="text" name="estado" placeholder="Estado">
+
+        <select name="curso">
+            <option value="">Escolha um curso</option>
+            <option>Desenvolvimento de Sistemas</option>
+            <option>Informática</option>
+            <option>Redes de Computadores</option>
+            <option>Administração</option>
+            <option>Eletrotécnica</option>
+            <option>Logística</option>
+        </select>
+
+        <input type="text" name="idade" placeholder="Idade">
+
+        <input type="password" name="senha" placeholder="Senha">
+
+        <button type="submit">Cadastrar</button>
+
+    </form>
+
+</div>
+
+</body>
+</html>
