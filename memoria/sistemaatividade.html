@@ -1,0 +1,21 @@
+
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Preferências do Usuário</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='sistemaatividade.css') }}">
+</head>
+
+<body class="{{ tema }}">
+
+    <h1>Preferências do Usuário</h1>
+
+    {% if nome %}
+        <h2>Olá, {{ nome }}!</h2>
+        <p>{{ email }}</p>
+    {% endif %}
+
+    <form action="/cadastro" method="POST">
